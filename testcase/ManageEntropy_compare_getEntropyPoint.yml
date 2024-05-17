@@ -1,0 +1,10 @@
+-
+  name: 对比公司管理熵排名和值
+  request:
+   method: post
+   url: /qitan-company-data/manage_compare/getEntropyPoint
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCodes:
+    endDate:

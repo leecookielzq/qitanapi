@@ -1,0 +1,10 @@
+-
+  name: 猜你想看
+  request:
+   method: post
+   url: /qitan-company-data/ehe/getCompanyEfficiencyOther
+   header:
+    Content-Type: application/json
+   data:
+    companyCodeList:
+

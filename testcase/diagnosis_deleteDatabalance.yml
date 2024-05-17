@@ -1,0 +1,12 @@
+-
+  name: 删除资产负债表的数据
+  request:
+   method: post
+   url: /qitan-data/data/deleteData
+   header:
+     Content-Type: application/json
+   data:
+     fiscal_year: 2024
+     orgCode:
+     type: 1
+     period_mark: 4

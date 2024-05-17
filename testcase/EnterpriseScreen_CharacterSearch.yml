@@ -1,0 +1,20 @@
+-
+  name: 企业筛选
+  request:
+   method: post
+   url: /qitan-data/filter/companyCharacterSearch
+   header:
+    Content-Type: application/json
+   data:
+    code:  #病症编码
+    endDate:
+    industryCode:  #行业编码
+    industryLevel: 1  #行业级别 1，2，3
+    orderType:   #升降徐1升序，2降序
+    orgCode:
+    pageNum: 1
+    pageSize: 10
+    quotaCode: ms_score
+    revenueType: 9 #营业收入规模 1大于100亿
+    statisticalScope: 1 #市场 1 国内，2国外
+

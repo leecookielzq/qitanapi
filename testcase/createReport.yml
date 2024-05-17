@@ -1,0 +1,14 @@
+-
+  name: 经营诊断编辑也页
+  request:
+   method: post
+   url: /qitan-common-biz/oss/createReport
+   header:
+    Content-Type: application/json
+   data:
+    companyCode:
+    otherCodes:
+    reportType: 1
+    type: Entropy
+    userId:
+    year:

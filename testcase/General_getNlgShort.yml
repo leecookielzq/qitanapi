@@ -1,0 +1,11 @@
+-
+  name: 公司nlg
+  request:
+   method: get
+   url: /qitan-data/general/getNlgShort
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    year:
+    type: 1

@@ -1,0 +1,9 @@
+-
+  name: 五力分析
+  request:
+   method: post
+   url: /qitan-company-data/ehe/model/getByIndicator
+   header:
+    Content-Type: application/json
+   data:
+    indiCatorName: 五力分析

@@ -1,0 +1,11 @@
+-
+  name: 产业链创建
+  request:
+   method: post
+   url: /qitan-company-data/chain/create
+   header:
+    Content-Type: application/json
+   data:
+    chainName: 新新人类
+    isCompChain: 1 #产业链类型 1企业产业链，2 产业链
+    userId:

@@ -1,0 +1,10 @@
+-
+  name: 上传现金流量表的数据
+  request:
+   method: post
+   url: /qitan-data/data/export
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    type: 3

@@ -1,0 +1,8 @@
+-
+  name: 公司的营收年份
+  request:
+   method: post
+   url: /qitan-data/general/getDateList/
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:

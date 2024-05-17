@@ -1,0 +1,19 @@
+-
+  name: 新建产业链保存
+  request:
+   method: post
+   url: /qitan-company-data/chain/insertChan
+   header:
+    Content-Type: application/json
+   data:
+    chainCode:
+    chainName:
+    id:
+    list1:
+      - productName:
+        productCode:
+        productCategory:
+        companys:
+    list2: []
+    list3: []
+    userId:

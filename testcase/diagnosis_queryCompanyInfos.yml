@@ -1,0 +1,16 @@
+-
+  name: 公司列表
+  request:
+   method: post
+   url: /qitan-data/data/queryCompanyInfos
+   header:
+    Content-Type: application/json
+   data:
+    pageNum: 1
+    pageSize: 10
+    key:
+    type:
+    first_industry_code:
+    second_industry_code:
+    third_industry_code:
+    userId:

@@ -1,0 +1,11 @@
+-
+  name: 猜你想看公司列表
+  request:
+   method: post
+   url: /qitan-company-data/ehe/getIndustryCompanyRecommend
+   header:
+    Content-Type: application/json
+   data:
+    companyCodeList:
+    industryName: SW_INDUSTRY_TWO
+    userId:

@@ -1,0 +1,11 @@
+-
+  name: 基线制定
+  request:
+   method: post
+   url: /qitan-data/base_line/getBaseListData
+   header:
+    Content-Type: application/json
+   data:
+    orgCode:
+    userId:
+    year:

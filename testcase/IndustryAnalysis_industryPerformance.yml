@@ -1,0 +1,14 @@
+-
+  name: 行业绩效分析
+  request:
+   method: post
+   url: /qitan-company-data/industry/industryPerformance
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    firstCode:
+    secondCode:
+    thirdCode:
+    endDate:
+    statisticalScope: 1

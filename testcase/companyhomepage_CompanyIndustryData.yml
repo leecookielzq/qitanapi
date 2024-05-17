@@ -1,0 +1,9 @@
+-
+  name: 公司行业信息
+  request:
+   method: get
+   url: /qitan-company-data/ehe/company/queryCompanyIndustryData
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    companyCode:

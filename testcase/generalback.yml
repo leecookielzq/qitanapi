@@ -1,0 +1,10 @@
+-
+  name: 退出经营诊断编辑
+  request:
+   method: post
+   url: /qitan-data/general/back
+   header:
+    Content-Type: application/json
+   data:
+    generalId:
+    userId:

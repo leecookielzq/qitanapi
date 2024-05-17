@@ -1,0 +1,9 @@
+-
+  name: 产业链中心我的产业链
+  request:
+   method: post
+   url: /qitan-company-data/chain/findChainUsersList
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    userId:

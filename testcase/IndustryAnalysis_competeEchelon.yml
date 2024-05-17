@@ -1,0 +1,14 @@
+-
+  name: 行业竞争梯队
+  request:
+   method: post
+   url: /qitan-company-data/industry/competeEchelon
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    firstCode:
+    secondCode:
+    thirdCode:
+    endDate:
+    statisticalScope: 1

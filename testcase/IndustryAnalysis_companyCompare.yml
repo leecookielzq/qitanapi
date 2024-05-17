@@ -1,0 +1,23 @@
+-
+  name: 同行业对比
+  request:
+   method: post
+   url: /qitan-company-data/industry/companyCompare
+   header:
+    Content-Type: application/json
+   data:
+    endDate:
+    firstCode:
+    industryLevel: 1
+    secondCode:
+    statisticalScope: 1
+    thirdCode:
+    xcode: INDX00104SA
+    xname: 收入3年复合增长率
+    xunit: '%'
+    ycode: INDX00291SA
+    yname: 毛利率(TTM)
+    yunit: '%'
+    zcode: SFIS00001SA
+    zname: 营业收入
+    zunit: 亿元

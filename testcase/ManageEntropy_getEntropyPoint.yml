@@ -1,0 +1,10 @@
+-
+  name: 最新年份数据、二级行业的数据
+  request:
+   method: post
+   url: /qitan-company-data/management/getEntropyPoint
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    endDate:

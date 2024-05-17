@@ -1,0 +1,12 @@
+-
+  name: 登录成功
+  request:
+   method: post
+   url: /qitan-user/user/login
+   header:
+    Content-Type: application/json
+   data:
+    password: Aa123456
+    userAgent: PC
+    userPhone: 13652883290
+    userType: pwd-login

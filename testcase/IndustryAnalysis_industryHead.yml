@@ -1,0 +1,14 @@
+-
+  name: 行业分析头部
+  request:
+   method: post
+   url: /qitan-company-data/industry/industryHead
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    firstCode:
+    secondCode:
+    thirdCode:
+    endDate:
+    statisticalScope: 1

@@ -1,0 +1,8 @@
+-
+  name: 获取用户信息
+  request:
+   method: post
+   url: /qitan-user/user/currentUser
+   header:
+    Content-Type: application/json
+   data:

@@ -1,0 +1,10 @@
+-
+  name: 完成开始计算第一步
+  request:
+   method: post
+   url: /qitan-data/data/done
+   header:
+    Content-Type:  application/json
+   data:
+    orgCode:
+    step: 1

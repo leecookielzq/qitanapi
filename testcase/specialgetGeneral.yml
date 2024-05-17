@@ -1,0 +1,11 @@
+-
+  name: 经营诊断编辑也页
+  request:
+   method: post
+   url: /qitan-data/special/getGeneral
+   header:
+    Content-Type: application/json
+   data:
+    companyCode:
+    otherCodes:
+    year:

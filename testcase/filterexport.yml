@@ -1,0 +1,36 @@
+-
+  name: 企业自定义筛选导出数据
+  request:
+   method: post
+   url: /qitan-data/filter/export
+   header:
+    Content-Type: application/json
+   data:
+    companys:  #病症编码
+    endDate:
+    industry: SW_INDUSTRY_ONE
+    industryCode:  #行业编码
+    industryName:   #行业级别 1，2，3
+    msFilter:
+     operator: 3 #运算符大于等于
+     value1: 10
+     year: 2023
+    pageNum: 1
+    pageSize: 10
+    quotaFilterParams:
+     - operator:  #运算符 1等于，2不等于，3大于等于，4小于，5介于，6不为空
+       quotaCode: SFIS00001SA #指标编码
+       quotaName: 营业收入   #指标名称
+       quotaType: 2   #指标类型 1，2
+       report: 4  #报告期
+       unit: 亿元
+       value1:
+       year: 2023
+     - operator:
+       quotaCode: SFIS00209SA
+       quotaName: 净利润
+       quotaType: 2
+       report: 4
+       unit: 亿元
+       value1:
+       year: 2023

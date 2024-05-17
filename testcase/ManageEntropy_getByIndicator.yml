@@ -1,0 +1,9 @@
+-
+  name: 范式成长画像
+  request:
+   method: post
+   url: /qitan-company-data/ehe/model/getByIndicator
+   header:
+    Content-Type: application/json
+   data:
+    indiCatorName: 企业范式成长阶段划分

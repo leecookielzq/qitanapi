@@ -1,0 +1,10 @@
+-
+  name: 新建产业链
+  request:
+   method: post
+   url: /qitan-company-data/chain/getChanDataUser
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    chainId:
+    year:

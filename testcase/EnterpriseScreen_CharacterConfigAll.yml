@@ -1,0 +1,8 @@
+-
+  name: 企业筛选病症
+  request:
+   method: post
+   url: /qitan-data/filter/selectCompCharacterConfigAll
+   header:
+    Content-Type: application/json
+   data:

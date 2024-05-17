@@ -1,0 +1,9 @@
+-
+  name: 查询公司名称及简称
+  request:
+   method: post
+   url: /qitan-company-data/ehe/company/queryCompanyName
+   header:
+    Content-Type: application/json
+   data:
+    companyCodeList:

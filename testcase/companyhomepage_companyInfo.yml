@@ -1,0 +1,10 @@
+-
+  name: 公司信息
+  request:
+   method: post
+   url: /qitan-company-data/ehe/company/companyInfo
+   header:
+    Content-Type: application/json
+   data:
+    mainCompanyCode:
+    companyCodes:

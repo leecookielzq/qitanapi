@@ -1,0 +1,11 @@
+-
+  name: 插入现金流量表的数据
+  request:
+   method: post
+   url: /qitan-data/data/batchInsert
+   header:
+    Content-Type: application/json
+   data:
+    orgCode:
+    innerList:
+    type: 3

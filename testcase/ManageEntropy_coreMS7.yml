@@ -1,0 +1,10 @@
+-
+  name: 管理熵核心评价维度对比
+  request:
+   method: post
+   url: /qitan-company-data/management/coreMS7
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    endDate:

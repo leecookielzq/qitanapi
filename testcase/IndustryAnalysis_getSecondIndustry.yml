@@ -1,0 +1,12 @@
+-
+  name: 行业分析龙头公司
+  request:
+   method: get
+   url: /qitan-company-data/adjusted/getSecondIndustry
+   header:
+    Content-Type: application/json
+   data:
+    SecondCode:
+    SecondName:
+    statisticalScope: 1
+    endDate:

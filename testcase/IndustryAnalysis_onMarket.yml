@@ -1,0 +1,14 @@
+-
+  name: 行业上市公司分布
+  request:
+   method: post
+   url: /qitan-company-data/industry/onMarket
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    firstCode:
+    secondCode:
+    thirdCode:
+    endDate:
+    statisticalScope: 1

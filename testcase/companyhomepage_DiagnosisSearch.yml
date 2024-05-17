@@ -1,0 +1,8 @@
+-
+  name: 公司诊断搜索
+  request:
+   method: post
+   url: /qitan-data/index/companyDiagnosisSearch
+   header:
+    Content-Type: application/json
+   data:

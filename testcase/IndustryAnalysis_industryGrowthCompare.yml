@@ -1,0 +1,11 @@
+-
+  name: 行业发展趋势
+  request:
+   method: post
+   url: /qitan-company-data/industry/industryGrowthCompare
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    endDate:
+    statisticalScope: 1

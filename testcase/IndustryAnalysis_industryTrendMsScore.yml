@@ -1,0 +1,14 @@
+-
+  name: 行业发展趋势-MS
+  request:
+   method: post
+   url: /qitan-company-data/industry/industryTrendMsScore
+   header:
+    Content-Type: application/json
+   data:
+    industryLevel: 1
+    firstCode:
+    secondCode:
+    thirdCode:
+    endDate:
+    statisticalScope: 1

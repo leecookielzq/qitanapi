@@ -1,0 +1,11 @@
+-
+  name: 经营诊断详情neo4j
+  request:
+   method: post
+   url: /qitan-data/general/selectNeo4jMap
+   header:
+    Content-Type: application/json
+   data:
+    companyCode:
+    userId:
+    year: 1

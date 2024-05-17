@@ -1,0 +1,8 @@
+-
+  name: 公司详情
+  request:
+   method: post
+   url: /qitan-data/data/findCompanyInfo/
+   header:
+    Content-Type: application/json
+   data:

@@ -1,0 +1,9 @@
+-
+  name: 产业链中心热门赛道
+  request:
+   method: post
+   url: /qitan-company-data/chain/selectChainCategoryList
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    isCompChain: 1

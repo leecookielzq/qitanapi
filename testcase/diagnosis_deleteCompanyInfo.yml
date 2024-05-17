@@ -1,0 +1,7 @@
+-
+  name: 删除公司
+  request:
+   method: post
+   url: /qitan-data/data/deleteCompanyInfo/
+   header:
+    Content-Type: application/json

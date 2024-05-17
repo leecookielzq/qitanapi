@@ -1,0 +1,16 @@
+-
+  name: 企业排行榜二级页面
+  request:
+   method: post
+   url: /qitan-company-data/company/ranking/
+   header:
+    Content-Type: application/json
+   data:
+     code:
+     endDate:
+     industryCode: 640000
+     industryLevel: 1
+     pageNum: 1
+     pageSize: 10
+     revenueType: 9
+     statisticalScope: 1

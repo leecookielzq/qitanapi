@@ -1,0 +1,10 @@
+-
+  name: 改变角色
+  request:
+   method: put
+   url: /qitan-user/user/info/update_userType
+   header:
+    Content-Type: application/json
+   data:
+    userId:
+    userType:

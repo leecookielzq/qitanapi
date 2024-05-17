@@ -1,0 +1,9 @@
+-
+  name: 企业排行榜
+  request:
+   method: post
+   url: /qitan-company-data/company/ranking/selectAllRankConfigRoot
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    id:

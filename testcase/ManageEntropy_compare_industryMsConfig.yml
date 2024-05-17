@@ -1,0 +1,10 @@
+-
+  name: 企业经营系统管理熵评价系统
+  request:
+   method: post
+   url: /qitan-company-data/manage_compare/industryMsConfig
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCodes:
+    endDate:

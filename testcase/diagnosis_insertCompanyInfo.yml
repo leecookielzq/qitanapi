@@ -1,0 +1,33 @@
+-
+  name: 在线诊断-创建公司
+  request:
+   method: post
+   url: /qitan-data/data/insertCompanyInfo
+   header:
+    Content-Type: application/json
+   data:
+    brief_Intro: 业务范围
+    chi_name_abbr: 哈哈影业
+    chi_name: 东阳哈哈影业有限公司
+    employee_num: 111
+    hq_address: 杭州市
+    is_listed: 2
+    legal_person: 薛松
+    ownership_nature: 1
+    reg_area: 浙江省 / 杭州市 / 上城区
+    s_first_industry_code: 340000
+    s_first_industry_name: 食品饮料
+    s_second_industry_code: 340700
+    s_second_industry_name: 饮料乳品
+    s_third_industry_code: 340701
+    s_third_industry_name: 软饮料
+    z_first_industry_code:
+    z_first_industry_name:
+    z_second_industry_code:
+    z_second_industry_name:
+    z_third_industry_code:
+    z_third_industry_name:
+    unitList:
+      - busi_unit_type: 10
+        busi_unit_name: 哈哈哈
+    userId:

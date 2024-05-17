@@ -1,0 +1,11 @@
+-
+  name: 公司变革
+  request:
+   method: post
+   url: /qitan-company-data/company_index/biange
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    roleName:
+    otherCode:

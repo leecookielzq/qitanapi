@@ -1,0 +1,9 @@
+-
+  name: 产业链分析
+  request:
+   method: post
+   url: /qitan-company-data/chain/analysis
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    chainCode:
