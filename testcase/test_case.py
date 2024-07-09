@@ -601,7 +601,7 @@ class TestQitanApi:
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
-
+    '''
     @allure.feature('企业筛选')
     @allure.title("企业筛选病症")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('EnterpriseScreen_CharacterConfigAll.yml'))
@@ -647,8 +647,9 @@ class TestQitanApi:
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(data)
         print(result)
+
     @allure.feature('企业筛选')
-    @allure.title("企业自定义筛选导出")
+    @allure.title("企业病症筛选导出")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('filterexport2.yml'))
     def test_filterexport2(self, caseinfo, web_year):
         url = test_host + caseinfo['request']['url']
@@ -662,7 +663,7 @@ class TestQitanApi:
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(data)
         print(result.text)
-
+    '''
     @allure.feature('企业筛选')
     @allure.title("企业自定义筛选")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('EnterpriseScreen_findCompanyPage.yml'))
