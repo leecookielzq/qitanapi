@@ -7,6 +7,7 @@ if __name__ == "__main__":
     # pytest.main(['-vs'])
 
     pytest.main(['-vs', '--alluredir', '../temp'])  #--alluredir temp
+    os.system('allure generate ../temp -o ../report --clean')
     # os.system('allure serve ./report')#启动生成报告
     #  allure generate 生成测试数据  测试数据目录
     # -o 生成测试报告 测试报告目录
@@ -16,7 +17,7 @@ if __name__ == "__main__":
     os.makedirs(allure_results_dir)
 
     shutil.copy('../environment.properties', '../temp/environment.properties')#负责文件到temp报告
-    os.system('allure generate ../temp -o ../report --clean')
+    # os.system('allure generate ../temp -o ../report --clean')
     # try:
     #     sendmail = SendEmail(send_msg=u"..\\data\\email_text")
     #     #

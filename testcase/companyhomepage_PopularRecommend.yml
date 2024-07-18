@@ -1,0 +1,10 @@
+-
+  name: 热搜公司
+  request:
+   method: get
+   url: /qitan-company-data/ehe/company/queryPopularRecommend
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    pageNum: 1
+    pageSize: 4

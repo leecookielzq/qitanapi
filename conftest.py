@@ -34,6 +34,35 @@ def web_endDate():
     else:
         return str(date(current_year - 2, 12, 31))
 
+'''后端控制年份如果当前月大于5月份则当前年份-1，否则-2'''
+@pytest.fixture(scope='session',autouse=True)
+def Java_year():
+    current_date = datetime.now()
+    # 提取当前的年份和月份
+    current_year = current_date.year
+    current_month = current_date.month
+    # 计算输出的年份
+    if current_month >= 5:
+        java_year_value = current_year -1
+    else:
+        java_year_value = current_year - 2
+
+    return java_year_value
+
+'''后端端控制的日期'''
+@pytest.fixture(scope='session',autouse=True)
+def java_endDate():
+    current_date = datetime.now()
+    # 提取当前的年份和月份
+    current_year = current_date.year
+    current_month = current_date.month
+    # 计算输出的年份
+    if current_month >= 5:
+        return str(date(current_year - 1, 12, 31))
+    else:
+        return str(date(current_year - 2, 12, 31))
+
+
 # def pytest_addoption(parser):
 #     parser.addoption(
 #         "--cmdopt",

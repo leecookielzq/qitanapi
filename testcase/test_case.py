@@ -22,9 +22,6 @@ class TestQitanApi:
         header=caseinfo['request']['header']
         result=Request().send_request(url=url,method=method,header=header,data=data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
-        # restult = requests.session(url,method,header,data)
-        # requests.post()
-        # print(restult)
         if result['code'] == 200:
             YamlUtil().write_extract_yaml({'token': result['data']['token']})
             YamlUtil().write_extract_yaml({'companyCode': '79'})
@@ -86,6 +83,19 @@ class TestQitanApi:
         header['Authorization'] = YamlUtil().read_extract_yaml('token')
         result = Request().send_request(url, method, header)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
+
+    @allure.feature('企业主页')
+    @allure.title("热搜公司")
+    @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('companyhomepage_PopularRecommend.yml'))
+    def test_PopularRecommend(self, caseinfo):
+        url = test_host + caseinfo['request']['url']
+        header = caseinfo['request']['header']
+        method = caseinfo['request']['method']
+        header['Authorization'] = YamlUtil().read_extract_yaml('token')
+        result = Request().send_request(url, method, header)
+        allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
+
+
 
     @allure.feature('企业主页')
     @allure.title("公司nlg")
@@ -195,7 +205,7 @@ class TestQitanApi:
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         # print(result)
 
-    '''
+
     @allure.feature('管理熵')
     @allure.title("管理熵nlg")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('ManageEntropy_getCompMsComment.yml'))
@@ -367,6 +377,7 @@ class TestQitanApi:
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
+
     @allure.feature('管理熵诊断详情')
     @allure.title("生成报告")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('createReport.yml'))
@@ -382,8 +393,7 @@ class TestQitanApi:
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
-        
-
+    # '''
     @allure.feature('管理熵对比页')
     @allure.title("查询公司名称及简称")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('companyhomepage_CompanyName.yml'))
@@ -601,7 +611,7 @@ class TestQitanApi:
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
-    '''
+    # '''
     @allure.feature('企业筛选')
     @allure.title("企业筛选病症")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('EnterpriseScreen_CharacterConfigAll.yml'))
@@ -663,7 +673,7 @@ class TestQitanApi:
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(data)
         print(result.text)
-    '''
+    # '''
     @allure.feature('企业筛选')
     @allure.title("企业自定义筛选")
     @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('EnterpriseScreen_findCompanyPage.yml'))
@@ -1322,16 +1332,16 @@ class TestQitanApi:
         allure.attach(str(data), name='请求参数', attachment_type=allure.attachment_type.JSON)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
 
-    @allure.feature('在线诊断')
-    @allure.title('删除企业')
-    @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('diagnosis_deleteCompanyInfo.yml'))
-    def test_deleteCompanyInfo(self, caseinfo):
-        url = test_host + caseinfo['request']['url']+YamlUtil().read_extract_yaml('companyinfoCode')
-        header = caseinfo['request']['header']
-        method = caseinfo['request']['method']
-        header['Authorization'] = YamlUtil().read_extract_yaml('token')
-        result = Request().send_request(url, method, header)
-        allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
+    # @allure.feature('在线诊断')
+    # @allure.title('删除企业')
+    # @pytest.mark.parametrize("caseinfo", YamlUtil().read_testcase_yaml('diagnosis_deleteCompanyInfo.yml'))
+    # def test_deleteCompanyInfo(self, caseinfo):
+    #     url = test_host + caseinfo['request']['url']+YamlUtil().read_extract_yaml('companyinfoCode')
+    #     header = caseinfo['request']['header']
+    #     method = caseinfo['request']['method']
+    #     header['Authorization'] = YamlUtil().read_extract_yaml('token')
+    #     result = Request().send_request(url, method, header)
+    #     allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
 
     @allure.feature('个人中心')
     @allure.title("改变角色")
@@ -1347,7 +1357,7 @@ class TestQitanApi:
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
-        '''
+        # '''
 
 
 

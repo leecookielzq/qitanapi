@@ -1,0 +1,1 @@
+{'parentCode': None, 'code': 200, 'message': '操作成功', 'data': {'id': 3939633, 'companyCode': '79', 'firstIndustryCode': '730000', 'firstIndustryName': '通信', 'secondIndustryCode': '730200', 'secondIndustryName': '通信设备', 'thirdIndustryCode': '730204', 'thirdIndustryName': '通信网络设备及器件', 'standard': 38, 'endDate': '2023-12-31 00:00:00'}}
