@@ -1379,7 +1379,7 @@ class TestQitanApi:
         header['Authorization'] = YamlUtil().read_extract_yaml('token')
         data = caseinfo['request']['data']
         data['userId'] = YamlUtil().read_extract_yaml('userId')
-        data['userType'] =random.randint(1,4)
+        data['userType'] = random.randint(1,4)
         result = Request().send_request(url, method, header, data)
         allure.attach(str(result), name='接口返回数据', attachment_type=allure.attachment_type.JSON)
         print(result)
