@@ -1,0 +1,12 @@
+-
+  name: 经营诊断编辑页删除分析点
+  request:
+   method: post
+   url: /qitan-data/general/delete
+   header:
+    Content-Type: application/json
+   data:
+    generalId:
+    id:
+    otherCodes:
+    userId:

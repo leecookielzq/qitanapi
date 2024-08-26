@@ -1,5 +1,5 @@
 -
-  name: 行业分析头部
+  name: 行业分析头部子行业行业龙头
   request:
    method: post
    url: /qitan-company-data/industry/industryHead

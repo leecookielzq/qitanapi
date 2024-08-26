@@ -15,6 +15,6 @@
     pageNum: 1
     pageSize: 10
     quotaCode: ms_score
-    revenueType: 9 #营业收入规模 1大于100亿
+    revenueType: 9 #营业收入规模 不限
     statisticalScope: 1 #市场 1 国内，2国外
 

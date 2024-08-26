@@ -1,0 +1,14 @@
+-
+  name:  基线制定保存2024年的基线目标
+  request:
+   method: post
+   url: /qitan-data/base_line/saveBaseLineData
+   header:
+    Content-Type: application/json
+   data:
+    orgCode:
+    userId:
+    year:
+    indexCode: INDX00285SA
+    indexUnit: "%"
+    indexValue: 12

@@ -1,0 +1,8 @@
+-
+  name: 行业排行榜配置
+  request:
+   method: post
+   url: /qitan-company-data/industry/configList
+   header:
+    Content-Type: application/json
+   data:

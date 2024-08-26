@@ -2,10 +2,19 @@
   name: 行业排行榜
   request:
    method: post
-   url: /qitan-company-data/industry/industryRank
+   url: /qitan-company-data/industry/industryRank2
    header:
     Content-Type: application/json
    data:
-    industryLevel: 1
+    coefficient: ""
+    db_table_source: industry_ms_data
     endDate:
-    statisticalScope: 1
+    industryLevel:
+    model_charactor_name: 行业发展活力
+    model_indicator: ms_score
+    model_indicator_name: 行业管理活力
+    name: 行业管理活力
+    rankName: 行业发展活力
+    remark:
+    statisticalScope:
+    tableHeadName: 行业管理活力

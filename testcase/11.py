@@ -1,5 +1,5 @@
 from datetime import datetime,date
-from  random import randint
+from random import randint
 print(randint(0,1))
 # def web_endDate():
 #     current_date = datetime.now()
@@ -42,21 +42,23 @@ print(randint(0,1))
 
     # return web_year_value,current_year,curre    nt_month
 # print(web_year())
-def shu(input_dict):
-    dist_1={"数字":"num","中文":"chinese","英文":"english"}
-    tuple_1=()
-    # for key,value in dist_1.items():
-    #     print(f"{key}:{value}")
-    for value in dist_1.values():
-            tuple_1+=(value,)
-            # print(tuple_1)
-    tuple_2=()
-    for value_2 in input_dict.value:
+# def shu(input_dict):
+#     dist_1={"数字":"num","中文":"chinese","英文":"english"}
+#     tuple_1=()
+#     # for key,value in dist_1.items():
+#     #     print(f"{key}:{value}")
+#     for value in dist_1.values():
+#             tuple_1+=(value,)
+#             # print(tuple_1)
+#     tuple_2=()
+#     for value_2 in input_dict.value:
+#
+#             tuple_2+=(value_2,)
+#             # print(tuple_2)
+#     output_dict=dict(zip(tuple_1,tuple_2))
+#     print(output_dict)
+#     # return output_dict
+#
+# shu({"数字":1,"中文":2,"英文":3})
 
-            tuple_2+=(value_2,)
-            # print(tuple_2)
-    output_dict=dict(zip(tuple_1,tuple_2))
-    print(output_dict)
-    # return output_dict
-
-shu({"数字":1,"中文":2,"英文":3})
+print(randint(1,3))

@@ -2,7 +2,7 @@
   name: 产业链产品
   request:
    method: post
-   url: /qitan-company-data/chain/selectProductCompanys
+   url: /qitan-company-data/chain/selectProductCompanys/
    header:
     Content-Type: application/x-www-form-urlencoded
    data:

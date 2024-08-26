@@ -6,7 +6,7 @@
    header:
     Content-Type: application/json
    data:
-    companys: 79 #病症编码
+    companys: #公司名称
     endDate:
     industry: SW_INDUSTRY_ONE
     industryCode:  #行业编码
@@ -14,7 +14,7 @@
     msFilter:
      operator: 3 #运算符大于等于
      value1: 10
-     year: 2023
+     year:
     pageNum: 1
     pageSize: 10
     quotaFilterParams:
@@ -25,7 +25,7 @@
        report: 4  #报告期
        unit: 亿元
        value1:
-       year: 2023
+       year:
      - operator:
        quotaCode: SFIS00209SA
        quotaName: 净利润
@@ -33,4 +33,4 @@
        report: 4
        unit: 亿元
        value1:
-       year: 2023
+       year:

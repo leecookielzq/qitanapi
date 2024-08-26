@@ -6,6 +6,8 @@
    header:
     Content-Type: application/json
    data:
-    industryLevel: 1
+    industryLevel:
+      #行业级别1，2，3
     endDate:
-    statisticalScope: 1
+    statisticalScope:
+      #国外，内1，2

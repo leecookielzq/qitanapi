@@ -1,0 +1,24 @@
+-
+  name: 经营诊断编辑页增加分析点
+  request:
+   method: post
+   url: /qitan-data/general/createGeneralCompanyConfig
+   header:
+    Content-Type: application/json
+   data:
+    generalId:
+    name: 新增分析点名称
+    otherCodes:
+    parentId:
+    industryLevel:
+    paramList:
+     - name: 图表一
+       isMixChart: false
+       imageType: 21
+       indexList:
+        - ciIndex: false
+          imageType: 21
+          indexChiName: 回款收入比(TTM)
+          indexCode: INDX00199SA
+          indexUnit: '%'
+

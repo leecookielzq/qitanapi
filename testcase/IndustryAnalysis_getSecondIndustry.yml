@@ -1,5 +1,5 @@
 -
-  name: 行业分析龙头公司
+  name: 五力分析行业的数据
   request:
    method: get
    url: /qitan-company-data/adjusted/getSecondIndustry

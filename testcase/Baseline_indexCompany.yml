@@ -1,0 +1,45 @@
+-
+  name: 基线制定-查询公司的指标数据
+  request:
+   method: post
+   url: /qitan-data/base_line/indexCompany
+   header:
+    Content-Type: application/json
+   data:
+    industryCode:
+    industryLevel:
+    #如果传行业统计值就需要传level
+    orgCodes:
+    type: 3
+    #3:三年数据 5：5年数据
+    indexs:
+      - indexCode: SFIS00001SA
+        indexName: 营业收入
+        unit: 亿元
+      - indexCode: INDX00291SA
+        indexName: 毛利率
+        unit: "%"
+      - indexCode: INDX00285SA
+        indexName: 营业利润率
+        unit: "%"
+      - indexCode: INDX00292SA
+        indexName: 净利润率
+        unit: "%"
+      - indexCode: SFCS00099SA
+        indexName: 经营净现金流
+        unit: 亿元
+      - indexCode: INDX00090SA
+        indexName: 应收账款周转天数
+        unit: 天
+      - indexCode: INDX00091SA
+        indexName: 存货周转天数
+        unit: 天
+      - indexCode: INDX00497SA
+        indexName: 人均营业收入
+        unit: 万元
+      - indexCode: INDX00495SA
+        indexName: 人均净利润
+        unit: 万元
+      - indexCode: SFIS00001SA
+        indexName: 人均薪酬
+        unit: 万元

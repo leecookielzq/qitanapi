@@ -1,0 +1,11 @@
+-
+  name:  基线制定回显2024年的基线目标
+  request:
+   method: post
+   url: /qitan-data/base_line/getBaseListData
+   header:
+    Content-Type: application/x-www-form-urlencoded
+   data:
+    orgCode:
+    userId:
+    year:
